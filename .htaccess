@@ -1,1 +1,1 @@
-RedirectMatch permanent ^/*$ /en/index.html/
+DirectoryIndex en/index.html
