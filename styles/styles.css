@@ -557,4 +557,17 @@ footer.footer p.small a:hover, footer.footer p.small a.focus {
 #Contact .address-block span {
 	text-transform: none;
 }
+
+.language-button {
+    margin: 0px 2px 0px 2px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.language-button:hover {
+    color: gray;
+    text-decoration: none;
+}
 /* Styles Begins */
