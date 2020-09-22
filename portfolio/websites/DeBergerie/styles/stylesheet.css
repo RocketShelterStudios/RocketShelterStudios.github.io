@@ -1,0 +1,371 @@
+@media (min-width:320px){
+
+body,html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    display: block;
+    background-color: rgb(16, 16, 16);
+}
+
+#map {
+    height: 400px;
+    background-color: grey;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.p1{
+    margin-bottom: 0px;
+}
+
+.title{
+    padding-top: 35px;
+    position: relative;
+    font-size: 30px;
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+.title>img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: block;
+    width: 5em;
+}
+.title>h1{
+    font-weight: 550;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-size: inherit;
+}
+
+.navbar1{
+    color: white;
+    width: 100%;
+    transform: translate(0,0%);
+    padding-bottom: 10px;
+}
+.navbar1>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+.navbutton{
+    font-size: 15pt;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0px 12px 10px 12px;
+}
+.navbutton:hover > .underline {  opacity: 1; }
+.navbutton>a {
+    color:inherit;
+  }
+  .navbutton>a:hover {
+    color:inherit;
+    text-decoration: none;
+  }
+
+.underline_selected{
+    background-color: white;
+    height: 2px;
+}
+
+.underline{
+    background-color: gray;
+    height: 2px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.carousel-title{
+    width: 100%;
+    position:absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.carousel-title>h2{
+    font-size: 18pt;
+    font-weight: 600;
+}
+.carousel-title>p{
+    color: white;
+    font-size: 10pt;
+    font-weight:300;
+}
+
+.introheader{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: rgb(112, 112, 122);
+    font-weight: normal;
+    font-size: 18pt;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+.introtext{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.menuheader{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: rgb(112, 112, 122);
+    font-weight: 350;
+    font-size: 30pt;
+    margin-top: 32px;
+}
+.menuheader>img{
+    display: block;
+    width: 5em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menusection{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: rgb(112, 112, 122);
+    font-weight: 350;
+    font-size: 18pt;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+.menusection>img{
+    display: block;
+    width: 6em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menulist{
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 90% 10%;
+}
+.menulist>p{
+    text-align: left;
+    font-weight: 300;
+    font-size: 13pt;
+    margin-bottom: 0;
+}
+.menu{
+    margin-bottom: 100px;
+}
+
+.photogrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.photo>a{
+    position: relative;
+    display: block;
+    background-color:rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+.photo>a:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.photo>a:hover >.zoom{
+    opacity: 0.8;
+}
+
+.photo>img{
+    width: 100%;
+    height: 100%;
+}
+.zoom{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 15%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    z-index: -50;
+    position: relative;
+}
+.lightboxbutton{
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+    transform: translateY(-200%);
+}
+
+
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    max-height: 80%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.photogridclass{
+    display: flex;
+}
+p{
+    color: rgb(112, 112, 122);
+    font-weight: normal;
+    text-align: center;
+}
+.semibold {
+    font-weight: 600;
+}
+
+.introimage{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 11em;
+}
+
+footer{
+    background-color: rgb(16, 16, 16);
+}
+footer>p{
+    padding-top: 10px;
+    font-weight: 550;
+    color: white;
+    text-align: center;
+    font-size: 15pt;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+footer>img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    width: 6em;
+    margin: 0px;
+}
+footer>ul{
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+    list-style-type: none;
+    justify-content: center;
+    transform: translate(0%,-25%);
+}
+footer>ul>li{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+}
+@media (min-width:769px)
+{
+    .photogrid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .menulist{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width:1025px)
+{
+    .menulist{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .carousel-title>h2{
+        font-size: 30pt;
+        font-weight: 600;
+    }
+    .carousel-title>p{
+        color: white;
+        font-size: 15pt;
+        font-weight:300;
+    }
+    .introheader{
+        margin-top: 60px;
+        margin-left: 33%;
+        margin-right: 33%;
+        font-weight: normal;
+        font-size: 23pt;
+    }
+    .introtext{
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        font-size: 16pt;
+        margin-top: 30px;
+        margin-bottom: 130px;
+    }
+    .zoom{
+      width: 5%;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .navbutton{
+        margin: 0px 36px 10px 36px;
+    }
+    
+}        
