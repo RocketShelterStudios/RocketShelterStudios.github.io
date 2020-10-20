@@ -70,7 +70,7 @@ function scrollDynamics() {
 
         } */
 
-    if ($("body").scrollTop < 150 || document.documentElement.scrollTop < 150) {
+    if (window.scrollY<150) {
 
         $(".service-scroll-indicator").css("opacity", 1);
         //$(".service-scroll-indicator").css("height", previousScrollIndicatorHeight);
