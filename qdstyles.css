@@ -175,7 +175,7 @@ header {
 
 .contact-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #29338A;
@@ -183,7 +183,7 @@ header {
 }
 
 .contact-info-container {
-    padding: 20px;
+    padding: 0px;
 }
 
 .contact-us {
@@ -270,7 +270,7 @@ footer {
     background-color: #1A1A1A;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -304,8 +304,8 @@ footer {
 .twitter-icon {
     display: inline-block;
     background-image: url("icons/twitter-logo.svg");
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     border-radius: 10px;
     margin: 20px;
 }
@@ -323,7 +323,7 @@ footer {
     margin: 0;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 
