@@ -546,6 +546,10 @@ footer {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+		font-size: inherit;
+		color: inherit;
+		text-decoration:inherit;
+		font-size: 14px;
     }
     .nav-container {
         box-sizing: border-box;
@@ -560,6 +564,7 @@ footer {
         transform: translateY(-50%);
         background-color: rgba(255, 255, 255, 0);
         padding: 0px 50px 0px 50px;
+		left: 50%;
     }
     .nav-list {
         display: block;
