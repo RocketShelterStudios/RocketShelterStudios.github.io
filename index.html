@@ -1,164 +1,265 @@
 <!DOCTYPE html>
 
-<html lang="nl">
-
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Wij zijn een klein maar getalenteerd team dat software ontwikkelt. We leggen de lat altijd zo hoog mogelijk en verleggen onze grenzen om onze skills en kennis te verbeteren. Deze mindset gecombineerd met onze expertise geeft ons de flexibiliteit om te werken aan een variëteit van applicaties.">
-    <meta name="keywords" content="Software, Software Ontwikkeling, Programmeren, Programmeurs, Games, Website Ontwikkeling, Website Design">
-    <meta name="author" content="QD IT-Solutions">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>QD IT-Solutions - Gepassioneerd door Software Ontwikkeling</title>
-    <link rel="stylesheet" type="text/css" href="qdstyles.css">
-    <link rel="icon" type="image/png" href="icons/favicon.png">
-    <link rel="canonical" href="https://qd-itsolutions.com/">
-
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/dynamics.js"></script>
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+    <title>QD IT-Solutions</title>
 </head>
+<body class="b-index">
 
-<body>
+    <header class="large-header">
 
-    <header>
+        <div class="overlay"></div>
 
-        <a id="menu-button" class="menu-icon">
-            <svg width="32px" height="32px" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </a>
-		
-		<a class="title-container" href="index.html">
-            <h1 class="title"><span id="qd-part">QD</span> <span>IT-Solutions</span></h1>
-            <p class="slogan">Passionate about software development</p>
-        </a>
+        <div class="nav-bar desktop">
 
-        <nav id="nav-bar" class="nav-container" hidden>
+            <a class="name" href="index.html">
+                <div>
+                    <p><span class="color">QD</span> <span>IT-Solutions</span></p>
+                    <p>Passionate about software development</p>
+                </div>
+            </a>
 
-            <ul class="nav-list">
-                <li>
-                    <a class="nav-link">Home</a>
-                    <div class="nav-link-indicator"></div>
-                </li>
-                <li>
-                    <div class="dropdown">
+            <nav>
+                <ul>
+                    <li><a class="item" href="index.html">Home</a></li>
+                    <li class="dropdown"><a class="item">Diensten
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="software.html">Software development</a>
+                            <a class="dropdown-item" href="games.html">Games en simulaties</a>
+                            <a class="dropdown-item" href="websites.html">Website development</a>
+                        </div>
+                    </a></li>
+                    <li><a class="item" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
-                        <div class="nav-link">
+        <div class="nav-bar mobile">
 
-                            <span>Diensten</span>
-                            <svg viewBox="0 0 16 16" class="down-arrow" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            <div class="name">
+                <p><span class="color">QD</span></p>
+            </div>
+
+            <nav>
+                <ul>
+
+                    <li>
+                        <a class="item" href="index.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class=""
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                             </svg>
+                        </a>
+                    </li>
 
-                        </div>
+                    <li class="dropdown">
+                        <a class="item">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class=""
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
+                            </svg>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="software.html">Software development</a>
+                                <a class="dropdown-item" href="games.html">Games en simulaties</a>
+                                <a class="dropdown-item" href="websites.html">Website development</a>
+                            </div>
+                        </a>
+                    </li>
 
-                        <div class="service-links-container">
-                            <ul class="service-links">
-                                <li>
-                                    <a class="nav-link" href="websites.html">Websites</a>
-                                    <div class="nav-link-indicator"></div>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="software.html">Software</a>
-                                    <div class="nav-link-indicator"></div>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="games.html">Games</a>
-                                    <div class="nav-link-indicator"></div>
-                                </li>
-                            </ul>
-                        </div>
+                    <li>
+                        <a class="item" href="contact.html">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class=""
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg>
+                        </a>
+                    </li>
 
-                    </div>
-                </li>
-                <li>
-                    <a class="nav-link" href="index.html#contact-section">Contact</a>
-                    <div class="nav-link-indicator"></div>
-                </li>
-            </ul>
+                </ul>
+            </nav>
+        </div>
 
-        </nav>
+        <div class="content">
+            <div class="outer-container">
+                <div class="title">
+                    <h1>QD IT-Solutions</h1>
+                    <p class="sub-title">Passionate about software development</p>
+                </div>
+
+                <div class="cta">
+                    <p>Zoekt u een bedrijf dat uw software, games of simulaties ontwikkeld? Wij helpen graag!</p>
+                    <a href="mailto:contact@qd-itsolutions.com" class="std-button contact">
+                        <span class="mail-icon">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                              </svg>
+                        </span>
+                        <span class="contact-us-span">
+                            Contacteer ons
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#main">
+                <svg width="64px" height="64px" viewBox="0 0 16 16"
+                    style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);" class="" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                </svg>
+            </a>
+        </div>
 
     </header>
 
-    <div class="main-container" role="main">
+    <div id="main">
 
-        <div class="intro-container">
+        <section class="software fly-in-right">
+            <div class="outer-container">
+                <div class="content">
 
-            <div class="about-us-container">
+                    <h2>Software ontwikkeling</h2>
+                    <p>Heeft u op maat gemaakte software nodig? Dan bent u bij ons aan het juiste adres. Wij bedenken en implementeren gepaste IT-oplossingen voor uw problemen en ideeën.</p>
 
-                <h2 class="about-us-title">Wie zijn wij?</h2>
-                <p class="about-us">
-                    Wij zijn een klein maar getalenteerd team dat software ontwikkelt. We leggen de lat altijd zo hoog mogelijk en verleggen onze grenzen om onze skills en kennis te verbeteren. Deze mindset gecombineerd met onze expertise geeft ons de flexibiliteit om te
-                    werken aan een variëteit van applicaties.
-                </p>
+                    <a href="software.html" class="std-button">
+                        Lees meer
+                        <span class="arrow-icon">
+                            <svg width="24px" height="24px" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </span>
+                    </a>
 
-                <a class="contact-us" href="index.html#contact-section">Contacteer ons</a>
-
+                </div>
             </div>
 
-            <div class="background-overlay"></div>
-        </div>
-
-        <section class="service-list">
-
-            <div class="service-container">
-                <h2 class="service-label">Website Ontwikkeling</h2>
-                <p class="service-info">Wij ontwikkelen uw website of begeleiden u graag met het opstellen van uw eigen wordpress website. Wij kunnen zowel simpele websites maken als meer complexe websites zoals webshops, blogs, enz...</p>
-                <a class="service-read-more" href="websites.html">Lees meer</a>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="service-container">
-                <h2 class="service-label">Software Ontwikkeling</h2>
-                <p class="service-info">Wij maken uw sofware graag op maat. Van mobiele applicaties tot bedrijfssoftware, dit vormt voor ons geen probleem. We werken met C++, .NET, Java, PHP, Javascript...Heeft u een software oplossing dat uw bedrijf efficienter te werk laat gaan? Hebt u een applicatie nodig voor uw klanten? Aarzel dan niet om ons te contacteren!</p>
-                <a class="service-read-more" href="software.html">Lees meer</a>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="service-container">
-                <h2 class="service-label">Game Ontwikkeling</h2>
-                <p class="service-info">Wij ontwikkelen games en virtuele applicaties op maat. We ontwikkelen op platformen zoals PC, Mobile, Console en VR. We doen zowel het bedenken van ideeën als het uitvoeren van uw idee.</p>
-                <a class="service-read-more" href="games.html">Lees meer</a>
+            <div class="image">
+                <div style="height: 100%"></div>
+                <div class="overlay"></div>
             </div>
 
         </section>
 
-        <section id="contact-section" class="contact-container">
+        <section class="games fly-in-left">
 
-            <svg width="26px" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-            </svg>
+            <div class="outer-container">
+                <div class="content">
+                    <img src="img/games.png">
 
-            <div class="contact-info-container">
-                <h2 class="contact-header">Contact</h2>
-                <a class="email-link" href="mailto:contact@qd-itsolutions.com">contact@qd-itsolutions.com</a>
+                    <div>
+                        <h2>Video games en simulaties</h2>
+                        <p>Wilt u een game laten ontwikkelen? Zowel voor het bedenken van het concept als voor het ontwikkelen van jouw idee kunt u bij ons terecht.</p>
+                        <p>Het simuleren van een scenario kan helpen bij het opleiden van werknemers, uittesten en visueel demonstreren van ideeën.
+                        </p>
+                        <p>We ontwikkelen voor verschillende platformen zoals PC, IOS, Android, VR, AR...</p>
+                        <a href="games.html" class="std-button">
+                            Lees meer
+                            <span class="arrow-icon">
+                                <svg width="24px" height="24px" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="websites fly-in-right">
+            <div class="outer-container">
+                <div class="content">
+
+                    <div>
+                        <h2>Website ontwikkeling</h2>
+                        <p>
+                            Wij designen en ontwikkelen websites op maat van de klant. Van basis website tot webshop, bij ons bent u aan het juiste adres!
+                        </p>
+                        <a href="websites.html" class="std-button">
+                            Lees meer
+                            <span class="arrow-icon">
+                                <svg width="24px" height="24px" viewBox="0 0 16 16" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div style="height: 100%"></div>
+                <div class="overlay"></div>
             </div>
         </section>
 
-    </div>
+        <section class="contact">
+            <div class="outer-container">
+                <div class="content">
+                    <div>
+                        <p>
+                            Heeft u een bedrijf nodig dat uw software applicatie ontwikkelt?</p>
+                            <p> Wij helpen u graag verder!
+                        </p>
+                        <a href="mailto:contact@qd-itsolutions.com" class="std-button">
+                            <span class="mail-icon">
+                                <svg width="24px" height="24px" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                                  </svg>
+                            </span>
+                            <span class="contact-us-span">
+                                Contacteer ons
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
+        <section class="about">
+            <div class="content">
+                <div>
+                    <h2>Wij zijn wij?</h2>
+                    <p>
+                        Wij zijn een klein maar getalenteerd team dat software ontwikkelt. We leggen de lat altijd zo hoog mogelijk en verleggen onze grenzen om onze skills en kennis te verbeteren. Deze mindset gecombineerd met onze expertise geeft ons de flexibiliteit om te werken aan een variëteit van applicaties.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p>QD IT-Solutions</p>
+                <p>BTW BE 00000000000</p>
+                <br>
+                <p>contact@qd-itsolutions.com</p>
+            </div>
+            <div class="copyright-notice">
+                <p>Copyright 2020 QD IT-Solutions</p>
+            </div>
+        </footer>
 
-        <ul class="social-media-list">
-            <li>
-                <a class="social-media-link" href="https://twitter.com/RocketShelter" target="_blank"><i class="twitter-icon"></i></a>
-            </li>
-        </ul>
-
-        <p class="copyright-notice">Copyright 2020 QD IT-Solutions</p>
-
-    </footer>
-
-    <div class="language-chooser">
-        <a href="index.html">NL</a>
-        <a href="en/index.html">EN</a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/index.js"></script> 
     </div>
 
 </body>
-
-</html>
